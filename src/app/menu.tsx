@@ -7,7 +7,9 @@ export default function Menu() {
   return (
     // definition du menu en haut
     <div className="fixed bg-gray-100 top-0 left-0 flex w-full justify-between p-6 border-b-2 border-black">
-      <div className="font-bold text-2xl">granger vintage</div>
+      <div className="font-bold text-2xl">
+        <Link href="/">granger vintage</Link>
+      </div>
       <div className="flex font-bold gap-5">
         <div>
           <Link href="/shop">Shop</Link>
