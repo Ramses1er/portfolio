@@ -6,11 +6,11 @@ import Link from "next/link";
 export default function Menu() {
   return (
     // definition du menu en haut
-    <div className="fixed bg-gray-100 top-0 left-0 flex w-full justify-between p-6 border-b-2 border-black">
+    <div className="fixed bg-[#FAFAFA] top-0 left-0 flex w-full justify-between p-6 border-b-2 border-black">
       <div className="font-bold text-2xl">
         <Link href="/">granger vintage</Link>
       </div>
-      <div className="flex font-bold gap-5">
+      <div className="flex font-bold gap-10">
         <div>
           <Link href="/shop">Shop</Link>
         </div>
@@ -23,17 +23,25 @@ export default function Menu() {
       </div>
       <div className="flex items-center gap-10 text-xl font-bold">
         <div>
-          <FaInstagram />
+          <Link href="">
+            <FaInstagram />
+          </Link>
         </div>
         <div>
-          <FaFacebookF />
+          <Link href="">
+            <FaFacebookF />
+          </Link>
         </div>
         <div>
-          <TiSocialTwitter />
+          <Link href="">
+            <TiSocialTwitter />
+          </Link>
         </div>
         <div className="flex gap-1 items-center">
           <div>
-            <PiShoppingCartSimpleFill />
+            <Link href="">
+              <PiShoppingCartSimpleFill />
+            </Link>
           </div>
           <div> 0</div>
         </div>
